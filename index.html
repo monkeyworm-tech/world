@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Geometry Dash World</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow, noodp, noydir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true,IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Language" content="en-US" />
+    
+    <!-- PWA / Web App Manifest & Theme Settings -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#16181e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Geometry Dash World" />
+    <link rel="apple-touch-icon" href="https://play-lh.googleusercontent.com/CNg8B28ItxcoMaWMEG5bF7T4BmJz3F2sli0H4PqoWa_IFUgVAV8lSBzOymZksqSPgBvmDsLsanz-MZWI9rSEgq0" />
+    <meta property="og:type" content="game" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .iframe-default {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body id="run_IFRAME_HTML">
+    <iframe id="iframehtml5" class="iframe-default" name="GAME FRAME" style="background-color:#000" width="100%" height="100%" src="https://lolygames.github.io/gd-world/" title="Geometry Dash World" frameborder="0" border="0" scrolling="no" allowfullscreen></iframe>
+    
+    <script>
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registered:', reg.scope))
+                    .catch(err => console.error('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0d5068b8bf4043bc889852a988aaec39","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
