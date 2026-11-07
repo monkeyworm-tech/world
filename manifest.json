@@ -1,0 +1,23 @@
+{
+  "short_name": "GD World",
+  "name": "Geometry Dash World",
+  "icons": [
+    {
+      "src": "https://play-lh.googleusercontent.com/CNg8B28ItxcoMaWMEG5bF7T4BmJz3F2sli0H4PqoWa_IFUgVAV8lSBzOymZksqSPgBvmDsLsanz-MZWI9rSEgq0",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://play-lh.googleusercontent.com/CNg8B28ItxcoMaWMEG5bF7T4BmJz3F2sli0H4PqoWa_IFUgVAV8lSBzOymZksqSPgBvmDsLsanz-MZWI9rSEgq0",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#16181e",
+  "theme_color": "#16181e",
+  "display": "fullscreen",
+  "orientation": "landscape"
+}
